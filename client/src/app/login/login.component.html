@@ -1,0 +1,33 @@
+<div class="f1">
+<h2 align="center">Login User</h2>
+
+<form >
+<!--   <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div> -->
+
+  <div class="container" >
+     <div> <label><b>Email</b></label><br>
+      <input [(ngModel)]="user.email" id="email" name="email"
+      type="email" class="validate">
+     </div>
+     <br>
+     <div> <label><b>Password</b></label><br>
+      <input [(ngModel)]="user.password" id="password" name="password"
+      type="password" class="validate">
+     </div>
+          
+     <span>{{errorMsg}}</span>
+      <button (click)="login()" 
+        class="btn waves-effect waves-light" 
+        type="submit" name="action">Login</button>
+       
+    </div>
+  
+    <!--  <div class="container" style="background-color:#f1f1f1">
+     
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>-->
+  </form>
+</div>
+  
